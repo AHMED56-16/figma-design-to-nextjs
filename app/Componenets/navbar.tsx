@@ -11,22 +11,15 @@ export default function Navbar() {
 
   return (
     <div className="bg-[#faf5f5]">
-      {/* Navigation */}
       <nav className="lg:pl-[750px] xl:pl-[900px] sm:pl-[600px] py-16 max-w-7xl flex justify-between items-center">
 
-        {/* Desktop Navbar Links - Aligning to the left with dynamic margin */}
         <div className="hidden md:flex space-x-9">
-          {/* Here, you can adjust the margin for different screen sizes */}
           <Link href="/work" className="text-lg text-black hover:text-blue-700">Work</Link>
           <Link href="/blog" className="text-lg text-black hover:text-blue-700">Blog</Link>
           <Link href="/contact" className="text-lg text-black hover:text-blue-700">Contact</Link>
         </div>
 
-        {/* Mobile Hamburger Menu Button - Aligning to the left */}
-        <button
-          className="md:hidden text-black focus:outline-none"
-          onClick={toggleMenu}
-        >
+        <button className="md:hidden text-black focus:outline-none"onClick={toggleMenu}>
           <svg
             className="w-6 h-6"
             fill="none"
@@ -45,7 +38,6 @@ export default function Navbar() {
 
       </nav>
 
-      {/* Mobile Dropdown Menu - Aligning to the left */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white p-4 space-y-4 flex flex-col`}>
         <Link href="/work" className="text-lg text-black hover:text-blue-700">Work</Link>
         <Link href="/blog" className="text-lg text-black hover:text-blue-700">Blog</Link>
