@@ -24,7 +24,7 @@ export default function HomePage() {
             <Link href="/contact" className="text-lg text-black hover:text-blue-700">Contact</Link>
           </div>
 
-          <button className="md:hidden text-black focus:outline-none" onClick={toggleMenu}>
+          <button className="md:hidden text-black focus:outline-none sm : block" onClick={toggleMenu}>
             <svg
               className="w-6 h-6"
               fill="none"
